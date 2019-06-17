@@ -1,0 +1,1 @@
+This project is a gradle build project adn this will create jar file automatically + any change in the repo will be constantly looked after by jenkins
