@@ -6,5 +6,10 @@ pipeline {
                 bat 'gradle --version'
             }
         }
+        stage('Gradle') {
+            steps {
+                bat 'build'
+            }
+        }
     }
 }
