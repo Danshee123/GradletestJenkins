@@ -8,14 +8,9 @@ pipeline {
         }
         stage('Building') {
 
-            node{ 
-                if(isUnix()){
-                    sh 'gradle build --info'
-                }
-                else{
+            steps{
                     bat 'gradle build --info'
                 }
             }
         }
     }
-}
