@@ -6,7 +6,7 @@ pipeline {
                 bat 'gradle --version'
             }
         }
-        stage('Gradle') {
+        stage('Building') {
             steps {
                 bat 'build'
             }
