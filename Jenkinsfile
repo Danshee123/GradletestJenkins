@@ -7,8 +7,14 @@ pipeline {
             }
         }
         stage('Building') {
+
             steps {
-               bat 'gradlew.bat clean build'
+                if(isUnix()){
+                    sh 'gradle build --info'
+                }
+                else{
+                    bat 'gradle build --info'
+                }
             }
         }
     }
