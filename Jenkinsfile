@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Building') {
 
-            steps {
+            node{ 
                 if(isUnix()){
                     sh 'gradle build --info'
                 }
